@@ -5,7 +5,8 @@
 
 
 
-Overview
+<h3>Overview</h3>
+
 Adelia is a web application that allows users to create, view, and delete posts. Each post can include a title, message, and optionally a media file. The application uses a hybrid approach with both static HTML files and a Sled database for storing metadata. The user interface is designed to be clean and user-friendly, with a focus on performance and reliability.
 
 Features
