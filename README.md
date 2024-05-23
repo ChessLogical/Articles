@@ -9,37 +9,37 @@
 
 Adelia is a web application that allows users to create, view, and delete posts. Each post can include a title, message, and optionally a media file. The application uses a hybrid approach with both static HTML files and a Sled database for storing metadata. The user interface is designed to be clean and user-friendly, with a focus on performance and reliability.
 
-Features
+<h3>Features</h3>
 The application offers the following features: Users can create posts with a title, message, and optionally an image, video, or audio file. Posts are displayed on the main page, with links to view each post in detail. Users have the option to delete their posts within 2 minutes of creation. Admins can manage posts, including editing and deleting any post at any time.
 
-Technology Stack
+<h3>Technology Stack</h3>
 The core logic of the application is written in Rust using the Rocket framework. A high-performance embedded database called Sled is used for storing metadata about posts. Nginx is used as a web server to serve static files and proxy requests to the Rocket application. The front-end interface is built with HTML and CSS for a clean and responsive design.
 
-Installation
+<h3>Installation</h3>
 To install and run the application, first clone the repository by running git clone https://github.com/ChessLogical/adelia.git. Navigate to the project directory with cd adelia. Ensure you have Rust installed, which you can do by following instructions at rust-lang.org. Install the necessary Rust dependencies by running cargo build. Set up Nginx to serve static files and proxy requests to the Rocket application. An example Nginx configuration is provided in the repository. Finally, start the application using cargo run.
 
-Configuration
+<h3>Configuration</h3>
 Ensure that the Sled database path is correctly set in the application. Additionally, make sure Nginx is configured to serve index.html files by default and proxy other requests to the Rocket application.
 
-Usage
+<h3>Usage</h3>
 Once the application is running, you can access it via your web browser. The main page is located at https://4chess.com, (will be on and off while in dev-- if its not up and working wait a bit and try again) where you can view all posts and create new ones. To create a post, click the "Create New Post" button on the main page, fill in the title, message, and optionally upload a media file, then submit the form to create the post. To view a post, click on any post title to view the full post. Posts can be deleted within 2 minutes of creation by clicking the "Delete" button. The admin panel can be accessed by navigating to the admin URL configured in the application, where you can log in using the admin password to manage posts.
 
-Customization
+<h3>Customization</h3>
 You can customize various aspects of the application. The HTML templates are located in the templates directory and can be modified to change the look and feel of the application. CSS styles are embedded in the HTML templates and can be adjusted to match your desired design. You can also modify the Rocket configuration and Nginx settings as needed to fit your environment.
 
-Security
+<h3>Security</h3>
 For security, ensure that the admin password and admin URL are properly configured and kept confidential. Regularly update dependencies and monitor for security vulnerabilities.
 
-Contributing
+<h3>Contributing</h3>
 Contributions are welcome! Please fork the repository and submit pull requests for any improvements or bug fixes.
 
-License
+<h3>License</h3>
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Support
+<h3>Support</h3>
 If you encounter any issues or have questions, please open an issue on the GitHub repository.
 
-Understanding Sled
+<h3>Understanding Sled</h3>
 What is Sled?
 Sled is a modern, high-performance, embedded key-value store written in Rust. It is designed to be used as a local database for applications that require fast, reliable storage. Sled aims to provide a simple interface while ensuring durability and performance. It supports complex operations like transactions, and offers a robust foundation for building data-driven applications.
 
