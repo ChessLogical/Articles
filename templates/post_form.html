@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Post</title>
+    <link rel="icon" href="/favicon.gif" type="image/gif">
+    <style>
+        body {
+            background-color: #333333;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        form {
+            background-color: #444444;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ffffff;
+            width: 100%;
+        }
+
+        input[type="text"],
+        textarea,
+        input[type="file"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555555;
+            border-radius: 4px;
+            background-color: #555555;
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .rules {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #555555;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .rules h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .rules ul {
+            padding-left: 20px;
+        }
+
+        .rules li {
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+		a:link {
+  color: green;
+}
+		
+    </style>
+</head>
+<body>
+<br>
+ <a href="/" class="back-link">Back to Main Page</a><br>
+    <h1>Create a New Post</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label for="title">Title (max 15 chars):</label>
+        <input type="text" id="title" name="title" maxlength="15" required><br><br>
+        <label for="message">Message (max 20000 chars):</label>
+        <textarea id="message" name="message" maxlength="20000" required></textarea><br><br>
+        <label for="media">Media:</label>
+        <input type="file" id="media" name="media"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="rules">
+        <h2>Post Rules</h2>
+        <ul>
+            <li>Title must be at most 15 characters long.</li>
+            <li>Message must be at most 20,000 characters long.</li>
+			<li>Allowed file types are: .jpg, .jpeg, .png, .gif, .webp, .bmp, .mp4, .mp3.</li>
+            <li>Media files must not exceed 20 MB.</li>
+        </ul>
+    </div>
+</body>
+</html>

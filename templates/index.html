@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Board</title>
+    <link rel="icon" href="/favicon.gif" type="image/gif">
+    <style>
+        /* Container for the titles */
+        .title-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        /* Styling for each title button */
+        .title-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .title-button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        body {
+            background-color: #333333;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .create-post-button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #444444;
+            color: #ffffff;
+            border: 1px solid #555555;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .create-post-button:hover {
+            background-color: #555555;
+        }
+
+        .post-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Message Board</h1>
+    <a href="/new_post" class="create-post-button">Create New Post</a>
+    <div class="title-container">
+        {{titles}}
+    </div>
+</body>
+</html>

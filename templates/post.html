@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Board</title>
+    <link rel="icon" href="/favicon.gif" type="image/gif">
+    <style>
+        body {
+            background-color: #333333;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        .media-container {
+            max-width: 400px;
+            max-height: 400px;
+            width: auto;
+            height: auto;
+        }
+
+        .delete-button-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .delete-button {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        a {
+            color: #66b3ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            margin-bottom: 20px;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">Back to Home Page</a>
+    <h1>{{title}}</h1>
+    {{media}}
+    <p>{{message}}</p>
+    <div class="delete-button-container">
+        {{delete_option}}
+    </div>
+</body>
+</html>

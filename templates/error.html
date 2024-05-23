@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error</title>
+    <link rel="icon" href="/favicon.gif" type="image/gif">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            background-color: #333333;
+            color: #ffffff;
+        }
+        a {
+            margin-bottom: 20px;
+            color: #66b3ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center;
+        }
+        .back-link {
+            margin-bottom: 20px;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">Back to Home Page</a>
+    <h1>Error</h1>
+    <p>{{error_message}}</p>
+    <p>Allowed file types are: .jpg, .jpeg, .png, .gif, .webp, .bmp, .mp4, .mp3</p>
+    <a href="/">Back to Main Page</a>
+</body>
+</html>
