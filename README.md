@@ -1,3 +1,9 @@
+
+
+<h1>Adelia</h1>
+
+
+
 Adelia is a Message Board - based on Claire, tinyib, vichan, lynxchan and a bunch of others. It is different than typical imageboards. It uses Rust and Sled! No database setup is needed; the Sled database is set up via Main.rs and that is awesome. No mysql to mess with; the Sled db is made with Rust!! Vichan is absurdly outdated and never worked that great. Lynxchan and JSChan are made with node js, there are lots of dependancies that have lots of dependancies, it is just absurd. Moreover, the many options on both are just silly. Nowadays most ib sites are lucky to get 20 visitors a month, and having 100 board options without even explaining the board options is just silly. Golang is nice such as fchan, it died down and usagi.reisen is the only Golang board i know of, the site is still up, the board works, but the focus on federating the board is just silly- much like the web-ring on node js boards. Anyways, golang is nice. But Rust is nicer. Rust is god. It is fastest, most secure, and most capable. Till AGI poops out a better lang, rust is best no matter what blue haired soyboys scream on youtube videos while making click bait videos that make people stupider. Rust is best, it has profoundly serious advantages. Enter Adelia. The first of my web apps. Very simple by design. A DB made with rust.
 
 Overview
