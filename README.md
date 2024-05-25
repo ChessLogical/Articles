@@ -16,7 +16,7 @@ The application offers the following features: Users can create posts with a tit
 The core logic of the application is written in Rust using the Rocket framework. A high-performance embedded database called Sled is used for storing metadata about posts. Nginx is used as a web server to serve static files and proxy requests to the Rocket application. The front-end interface is built with HTML and CSS for a clean and responsive design.
 
 <h3>Installation</h3>
-To install and run the application, first clone the repository by running git clone https://github.com/ChessLogical/adelia.git. Navigate to the project directory with cd adelia. Ensure you have Rust installed, which you can do by following instructions at rust-lang.org. Install the necessary Rust dependencies by running cargo build. Set up Nginx to serve static files and proxy requests to the Rocket application. An example Nginx configuration is provided in the repository. Finally, start the application using cargo run.
+To install and run the application, first clone the repository by running git clone https://github.com/ChessLogical/Articles.git. Navigate to the project directory with cd adelia. Ensure you have Rust installed, which you can do by following instructions at rust-lang.org. Install the necessary Rust dependencies by running cargo build. Set up Nginx to serve static files and proxy requests to the Rocket application. An example Nginx configuration is provided in the repository. Finally, start the application using cargo run.
 
 <h3>Configuration</h3>
 Ensure that the Sled database path is correctly set in the application. Additionally, make sure Nginx is configured to serve index.html files by default and proxy other requests to the Rocket application.
